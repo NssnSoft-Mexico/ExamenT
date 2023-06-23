@@ -1,0 +1,8 @@
+{
+    "bd_dev": {
+        "USER": "rootL",
+        "PASSWORD": "admin",
+        "DB": "okeio_db",
+        "HOST": "127.0.0.1"
+    }
+}

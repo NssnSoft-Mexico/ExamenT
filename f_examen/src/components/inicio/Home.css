@@ -1,0 +1,199 @@
+.ButtonSelected{
+    width: 90%;
+    height: 400px;
+    background: #E8EBF0!important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
+    border-radius: 10px;
+    margin-left: 10%;
+    color: #4F83F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.newButton{
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;/* Azul cerúleo */
+    border: 1.5px solid #4F83F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #4F83F1;
+}
+
+.newButtonD{
+   display: none;
+}
+
+
+.bGeneral{
+    width: 160px;
+    height: 40px;
+    background: #4F83F1;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.017em;
+    color: #FFFFFF;
+}
+
+.bGeneralC{
+    margin-bottom: 7px;
+    display: block;
+    width: 160px;
+    height: 40px;
+    background: #4F83F1;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.017em;
+    color: #FFFFFF;
+}
+
+.bCancelar{
+    width: 160px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1.5px solid #4F83F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.017em;
+    color: #4F83F1;
+    margin-left: 13px;
+}
+
+.ButtonSelectedD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 16px 0px;
+    gap: 24px;
+    position: relative;
+    top: -64px;
+}
+
+.idvP{
+    margin-top: 30px;
+}
+.pdb85{
+    padding-bottom: 85px;
+}
+.pdr10{
+    padding-right: 10px;
+}
+.pdb10 {
+    margin-bottom: 10px;
+}
+.sizeImage{
+    width: 24px;
+}
+.sizeImageB{
+    width: 80px;
+}
+.slideB{
+    margin-left: 2px;
+    border: none;
+    background: transparent;
+}
+.slideB:hover{
+    background-color: #E8EBF0;
+}
+.HeadStyle{
+    background: #4F83F1;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.017em;
+}
+.viewProduct{
+    border-radius: 10px;
+    height: 49%;
+    width: 70%;
+}
+.addProduct{
+    border-radius: 10px;
+    height: 70%;
+    width: 80%;
+}
+.editProduct{
+    border-radius: 10px;
+    height: 44%;
+    width: 34%;
+}
+.delProduct{
+    border-radius: 10px;
+    height: 17%;
+    width: 27%;
+}
+
+.altaProduct{
+    border-radius: 10px;
+    height: 90%;
+    width: 72%;}
+.titleModal{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.017em;
+    color: #000000;
+}
+.styletitle{
+    position: absolute;
+    left: 3.66%;
+    right: 0%;
+    /* top: -17%; */
+    bottom: 84%;
+}
+.dataI{
+    display: flex;
+    margin-top: 47px;
+    top: 23px;
+    padding: 8px 20px;
+}
+.dataIs{
+    display: flex;
+    margin-top: -5px;
+    padding: 8px 20px;
+}
+.stylediv{
+    width: 33.3%;
+    display: inline-block;
+}
+.textModal{
+    font-family: 'DIN Alternate';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.017em;
+    color: #000000;
+}
