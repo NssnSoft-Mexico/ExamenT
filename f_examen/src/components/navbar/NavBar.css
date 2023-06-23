@@ -1,0 +1,16 @@
+#navbar {
+    background: #193A65 !important;
+    justify-content: space-between !important;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#logout-item {
+    display: flex !important;
+    align-items: center !important;
+}
+
+#logout-icon {
+    color: white;
+}
