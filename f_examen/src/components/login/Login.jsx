@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Container from "@mui/material/Container";
-import Logo from '../imagenes/Buttons/Logo.png';
+import Logo from '../imagenes/Buttons/Logi.svg';
 import '../login/Login.css'
 import { Box, TextField } from '@mui/material';
 import Link from "@mui/material/Link";
@@ -9,11 +9,12 @@ import Button from "@mui/material/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../actions/auth";
 
-function Logins(props) {
+function Login(props) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [passwordType, setPasswordType] = useState("password");
     const [loading, setLoading] = useState(false);
+    const [isLogged, setisLogged] = useState(false);
     const { isLoggedIn } = useSelector(state => state.auth);
     const { message } = useSelector(state => state.message);
     const dispatch = useDispatch();
@@ -43,7 +44,7 @@ function Logins(props) {
         if (username && password) {
             dispatch(login(username, password))
             .then((response) => {
-                props.history.push("/inicio");
+                props.history.push("/Data");
                 window.location.reload();
             })
             .catch(() => {
@@ -107,7 +108,7 @@ function Logins(props) {
                         variant="contained"
                         sx={{ mt: 3, mb: 2 }}
                     >
-                        Sign In
+                        Iniciar Sesión
                     </Button>
                     <Grid container>
                         <Grid item xs>
@@ -127,4 +128,4 @@ function Logins(props) {
     )
 }
 
-export default Logins;
+export default Login;

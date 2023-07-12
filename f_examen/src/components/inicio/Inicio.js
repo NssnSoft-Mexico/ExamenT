@@ -242,10 +242,6 @@ const Inicio = () => {
                         </Typography>
                         <Typography className='titleModal' sx={{ mt: 2 }}>
                         </Typography>
-                        <img
-                            style={{height: '225px'}}
-                            src={pokemon.sprites.front_default}
-                            alt={pokemon.name} />
                     </div>
                     <Button className='bGeneral' type="submit" onClick={handleClose} variant="contained">Salir</Button>
                 </Box>

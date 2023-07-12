@@ -1,51 +1,47 @@
 import React from 'react';
-import Box from '@mui/material/Box';
-import Menu from '@mui/material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import '../Header/Header.css';
-import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText, Fade } from '@mui/material';
+import { useDispatch } from "react-redux";
+import { Logout } from '@mui/icons-material';
+import { Nav, Navbar } from 'react-bootstrap';
+import { logout } from "../../actions/auth";
+import { Box, Toolbar, AppBar, IconButton, Typography, Button } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
+
 
 function ResponsiveAppBar () {
-  
-  
+
+  const user = JSON.parse(localStorage.getItem('user'));
+  const dispatch = useDispatch();
+    const logOut = () => {
+        dispatch(logout());
+        localStorage.removeItem('user');
+  };
   const [isDrawerOpen, setDrawerOpen] = React.useState(false);
   const toggleDrawer = () => {
     setDrawerOpen(!isDrawerOpen);
   }
 
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer}>
-          <MenuIcon />
-        </IconButton>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Your Website
-        </Typography>
-      </Toolbar>
-      <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer}>
-        <List sx={{ width: 250 }} onClick={toggleDrawer}>
-          <ListItem button>
-            <ListItemText primary="Home" />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary="About" />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary="Services" />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary="Contact" />
-          </ListItem>
-        </List>
-      </Drawer>          
-    </AppBar>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position='static'>
+        <Toolbar>
+          <IconButton
+            size='large'
+            edge='start'
+            color='inherit'
+            aria-label='menu'
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant='h6' component="div" sx={{ flexGrow: 1 }}>
+            AVT Tour
+          </Typography>
+          <Button component={Link} to="/login" color="inherit" onClick={logOut}>Cerrar Sesion</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 }
 export default ResponsiveAppBar;
