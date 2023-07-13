@@ -2,6 +2,8 @@ import * as React from "react";
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { Box, TextField } from '@mui/material';
 import ResponsiveAppBar from "../Header/Header";
+import Footer from "../Footer/Fotter"
+import Slider from "../Carrousel/Sliders";
 
 export default function Data(){
 
@@ -11,11 +13,8 @@ export default function Data(){
     return(
         <React.Fragment>
             <ResponsiveAppBar/>
-            <Box sx={{ overflow: "auto" }}>
-                <Box  sx={{width: "100%", display: "table", tableLayout: "fixed" }}>
-                               
-                </Box >
-            </Box>
+            <Slider />
+            <Footer />
         </React.Fragment>
     );
 }

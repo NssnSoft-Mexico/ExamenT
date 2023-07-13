@@ -7,8 +7,6 @@ import { Button } from 'react-bootstrap';
 import {API_PORTAL_URL} from '../../constants';
 import { styled } from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
-import { SweetAlertIcon, SweetAlertOptions, SweetAlertResult } from 'sweetalert2'
-import swal from 'sweetalert2'
 
 import './Home.css';
 import Table from '@mui/material/Table';

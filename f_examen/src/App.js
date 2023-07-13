@@ -10,6 +10,7 @@ import ResponsiveAppBar from './components/Header/Header';
 import Login from './components/login/Login';
 import Data from './components/DataRegister/Data';
 import Footer from './components/Footer/Fotter';
+import Slider from './components/Carrousel/Sliders';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <PrivateRoute path="/altaMs" component={CartItems} />
         <PrivateRoute path="/AppBar" component={ResponsiveAppBar} />
         <PrivateRoute path="/Footer" component={Footer} />
+        <PrivateRoute path="/Slider" component={Slider} />
         <Route exact path={["/", "/Login"]} component={Login}  />
         <Route path="/Data" component={Data} />
       </Switch>
